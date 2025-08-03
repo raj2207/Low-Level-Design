@@ -8,6 +8,7 @@ public class LogDispatcher extends Thread{
     public LogDispatcher(LogCosumerRegistry logCosumerRegistry, LogBuffer eventLogBuffer){
         this.logCosumerRegistry = logCosumerRegistry;
         this.logBuffer = eventLogBuffer;
+        shouldRun = true;
     }
 
     public void stopDispatcher(){
